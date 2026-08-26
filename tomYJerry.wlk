@@ -1,7 +1,7 @@
 object tom {
     var energia = 50
     method energia() = energia
-    method estaFeliz() = self.energia() > 50
+    method estaFeliz() = self.energia() >= 50
     
     method correr(metros) {
         energia -= (metros / 2)
