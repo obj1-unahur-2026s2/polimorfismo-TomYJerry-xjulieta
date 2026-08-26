@@ -3,9 +3,11 @@ test "velocidad maxima de tom inicial es 10" {
   assert.equals(10,tom.velocidadMaxima())
 }
 
-test "Tom inicialmente esta feliz"
+test "Tom inicialmente esta feliz"{
  assert.that(tom.estFeliz())
 }
 
-test "tom despues de correr 90 metros no esta feliz"
- assert
+test "tom despues de correr 90 metros no esta feliz"{
+tom.correr(90) 
+assert.notThat(tom.estaFeliz())
+}
